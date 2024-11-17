@@ -3,13 +3,13 @@
 ## Project Overview
 
 ##Team Members:##
-Yuvaraj T- Project Lead & Full Stack Developer(NMID:0C8D9B5D25C79949BD4479F404622D06)
+Yuvaraj T- Project Lead & Full Stack Developer(NMID:0C8D9B5D25C79949BD4479F404622D06)<br/>
 Yuthikshaa M- Full Stack Developer 
-(NM Id:B5FED8ABE50BCBBBA3443AC9F279BC8B)
+(NM Id:B5FED8ABE50BCBBBA3443AC9F279BC8B)<br/>
 Jayaram A- Full Stack Developer  
-(Jayaram A -6A0CE125F42887DB29744CF9951E3948)
+(Jayaram A -6A0CE125F42887DB29744CF9951E3948)<br/>
 Priyadarshini V- Full Stack Developer  
-
+<br/>
 
 ### Purpose  
 To create a platform for managing books, enhancing customer accessibility, and streamlining operations for store owners. Features include:  
