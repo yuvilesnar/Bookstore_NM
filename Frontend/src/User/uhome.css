@@ -1,29 +1,208 @@
-#uhome{
-    height: 700px;
+:root {
+    --primary-bg: #f2f2f2;
+    --primary-text: #333;
+    --secondary-bg: #e6e6e6;
+    --card-bg: #ffffff;
+    --card-hover-bg: #fafafa;
+    --button-bg: #4CAF50;
+    --button-hover-bg: #45a049;
+    --button-color: #ffffff;
+    --border-radius: 10px;
+    --card-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px;
+    --heading-color: #FF5722;
+    --font-family: 'Poppins', sans-serif;
+    --navbar-bg: #2C3E50;  /* New color for navbar */
+    --navbar-text: #ECF0F1;  /* Light color for navbar text */
+    --navbar-hover-bg: #34495E; /* Hover effect for navbar */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    line-height: 1.6;
+    padding: 20px;
+    overflow-x: hidden;
+  }
+  
+  h1 {
+    color: var(--heading-color);
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+  }
+  
+  #uhome {
+    height: auto;
     background-image: url("https://furniture-shop-site.netlify.app/static/media/defaultBcg.9a1103b5.jpeg");
+    background-size: cover;
+    background-position: center;
     color: rgb(255, 255, 255);
-    
-}
-
-#hh{
+    padding: 40px 0;
+    width: 100%;
+  }
   
-    margin-top: 200px;
-    margin-left: 480px;
-    margin-right: 480px;
-    background-color: #45444492;
-   
-}
-#bt{
+  #hh {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: rgba(69, 68, 68, 0.7);
+    border-radius: var(--border-radius);
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    box-shadow: var(--card-shadow);
+  }
   
-    height: 60px;
-    width: 170px;
-    background-color: rgb(167,149,125);
+  #bt {
+    height: 50px;
+    width: 160px;
+    background-color: var(--button-bg);
     border: none;
-    color: black;
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-#bt:hover{
+    color: var(--button-color);
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: var(--border-radius);
     cursor: pointer;
-    opacity: 0.8;
-}
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  #bt:hover {
+    background-color: var(--button-hover-bg);
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  .card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin: 15px;
+    height: 450px; /* Increased height */
+    width: 100%;
+    max-width: 250px; /* Max width for responsiveness */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    background-color: var(--card-hover-bg);
+  }
+  
+  .card-img-top {
+    height: 100%;
+    object-fit: cover;  /* Ensures image fits the card */
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+  }
+  
+  .card-body {
+    padding: 15px;
+    flex-grow: 1;  /* Ensure body takes remaining space */
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--primary-text);
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-title br {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .card-body a {
+    text-decoration: none;
+  }
+  
+  .card-body a:hover {
+    text-decoration: underline;
+  }
+  
+  hr {
+    border: 0;
+    border-top: 1px solid var(--primary-text);
+    width: 50%;
+    margin: 20px auto;
+  }
+  
+  .navbar {
+    background-color: var(--navbar-bg); /* New navbar background */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: var(--navbar-text); /* New navbar text color */
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .navbar .nav-link:hover {
+    background-color: var(--navbar-hover-bg); /* New hover effect */
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .card-img-top {
+      height: 220px;
+    }
+  
+    #hh {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    #bt {
+      width: 140px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    .card-img-top {
+      height: 180px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    #bt {
+      width: 120px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .card {
+      width: 22%;
+      margin: 10px;
+    }
+  }
