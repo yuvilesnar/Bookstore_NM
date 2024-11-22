@@ -1,4 +1,4 @@
-# Bookstore E-Commerce Platform with MERN Stack
+    # Bookstore E-Commerce Platform with MERN Stack
 
 ## Project Overview
 Team ID: NM2024TMID17582 
