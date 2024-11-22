@@ -1,7 +1,7 @@
 # Bookstore E-Commerce Platform with MERN Stack
 
 ## Project Overview
-Team ID: NM2024TMID17582
+Team ID: NM2024TMID17582 
 ###Team Members:###<br/>
 Yuvaraj T- Project Lead & Full Stack Developer (NMID:0C8D9B5D25C79949BD4479F404622D06)<br/>
 Yuthikshaa M- Full Stack Developer 
@@ -34,7 +34,7 @@ To create a platform for managing books, enhancing customer accessibility, and s
 
 ---
 
-## Architecture
+## Architecture  
 
 ### Frontend
 - Technologies: React.js, HTML, CSS, JavaScript  
